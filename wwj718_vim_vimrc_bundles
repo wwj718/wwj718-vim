@@ -1,0 +1,41 @@
+" plugin
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'msanders/snipmate.vim'
+Plugin 'mattn/emmet-vim'
+
+
+"################### 显示增强-主题 ###################"
+"
+""主题 solarized
+Bundle 'altercation/vim-colors-solarized'
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans=1
+"let g:solarized_contrast="normal"
+"let g:solarized_visibility="normal"
+"
+""主题 molokai
+"Bundle 'tomasr/molokai'
+"let g:molokai_original = 1
+
+
+" " All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" end plugin
+
+"<wwj>
+map <F7> :NERDTreeToggle<CR>
+"</wwj>
+
