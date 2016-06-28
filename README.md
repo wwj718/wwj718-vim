@@ -23,3 +23,14 @@ endif
 
 # 说明
 以上配置对vim和macvim同时有效
+
+### neovim
+wget https://raw.githubusercontent.com/wwj718/wwj718-vim/master/wwj718_vim_vimrc -O ~/.config/nvim/init.vim
+
+注释掉插件部分
+```
+" install bundles
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+```
