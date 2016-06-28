@@ -34,3 +34,18 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 ```
+
+neovim插件安装：
+
+*  curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+*  在 ~/.config/nvim/init.vim添加你要的插件
+
+```
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+map <F7> :NERDTreeToggle<CR>
+call plug#end()
+```
+
+
+
